@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtDialogCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Tên Khách Hàng"
+        android:textColor="#FFE500"
+        android:background="#f000"
+        android:textSize="20sp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/txtDialogUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa Thông Tin"
+        android:textSize="20dp"
+        android:textColor="#f000"
+        android:background="@drawable/customedt"/>
+    <TextView
+        android:id="@+id/txtDialogDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa "
+        android:textSize="20dp"
+        android:textColor="#f000"
+        android:background="@drawable/customedt"/>
+    <TextView
+        android:id="@+id/txtDialogHairCuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cắt Tóc"
+        android:textSize="20dp"
+        android:textColor="#f000"
+        android:background="@drawable/customedt"/>
+    <TextView
+        android:id="@+id/txtDialogHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem Lịch Sử Cắt"
+        android:textSize="20dp"
+        android:textColor="#f000"
+        android:background="@drawable/customedt"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

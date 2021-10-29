@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sceen.CatToc">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Cắt Tóc Cho Khách Hàng"
+            android:textColor="#FFE500"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/customedt">
+
+        <TextView
+            android:id="@+id/txtTenKhachHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFE500"
+            android:gravity="center"
+            android:text="txt name "
+            android:textColor="#f000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn thợ cắt"
+        android:textColor="#f000"
+        android:textSize="20sp" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+     android:orientation="horizontal">
+     <Spinner
+         android:id="@+id/spinerTho"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:textColor="#000000"
+         />
+
+ </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ảnh của khách"
+        android:textColor="#f000"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/txtCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f000"
+            android:textSize="30dp"
+            android:text="Máy Ảnh"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/customedt"/>
+        <TextView
+            android:id="@+id/txtLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f000"
+            android:textSize="30dp"
+            android:text="Thư Viện "
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/customedt"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:weightSum="10">
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recyCatToc"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_marginTop="20dp"
+           android:layout_weight="9"
+           android:background="@drawable/customedt"/>
+       <TextView
+           android:id="@+id/txtThem"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:text="Thêm"
+           android:gravity="center"
+           android:textColor="#FFE500"
+           android:background="#f000"
+
+
+           />
+
+   </LinearLayout>
+</LinearLayout>
